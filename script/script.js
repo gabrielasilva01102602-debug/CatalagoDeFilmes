@@ -55,7 +55,7 @@ mostrarFilmes(filmes)
 function verDetalhes(titulo){
     Swal.fire({
         title: titulo,
-        text: "Mais informações do filme"
+        text: "Mais informações do filme",
         icon: "info"
     })
 }
