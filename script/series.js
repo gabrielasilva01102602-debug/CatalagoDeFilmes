@@ -32,7 +32,7 @@ const series = [
 ]
 
 const ListaSeries = document.getElementById("ListaSeries");
-function mostarSeries(lista) {
+function mostrarSeries(lista) {
     ListaSeries.innerHTML = ""
     lista.forEach(serie => {
         ListaSeries.innerHTML += `
