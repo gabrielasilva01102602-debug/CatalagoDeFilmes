@@ -48,9 +48,19 @@ function mostrarFilmes(lista){
                          <h3>${filme.titulo}</h3>
                          <p>${filme.descricao}</p>
                          <button class="btn btn-dark" onclick="verDetalhes('${filme.titulo}')">Ver detalhes</button>
-                        </div>
+                    </div>
                 </div>
             </div> 
         `
     });
+}
+
+mostrarFilmes(filmes)
+
+function verDetalhes(titulo){
+    Swal.fire({
+        title: titulo,
+        text: "Mais informações do filme"
+        icon: "info"
+    })
 }
