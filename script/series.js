@@ -31,11 +31,11 @@ const series = [
     }
 ]
 
-const Listaseries = document.getElementById("ListaSeries");
+const ListaSeries = document.getElementById("ListaSeries");
 function mostarSeries(lista) {
-    ListaFilmes.innerHTML = ""
-    lista.forEach(filme => {
-        ListaFilmes.innerHTML += `
+    ListaSeries.innerHTML = ""
+    lista.forEach(serie => {
+        ListaSeries.innerHTML += `
             <div class="col-md-4">
                 <div class="card card-filme h-100">
                     <img src="${serie.imagem}" class="card-img-top">
@@ -50,7 +50,7 @@ function mostarSeries(lista) {
     });
 }
 
-mostrarFilmes(filmes)
+mostrarSeries(series)
 
 function verDetalhes(titulo, descricao){
     Swal.fire({
