@@ -31,11 +31,11 @@ const filmes = [
     }
 ]
 
-const listaFilmes = document.getElementById("listaFilmes");
+const ListaFilmes = document.getElementById("ListaFilmes");
 function mostrarFilmes(lista) {
-    listaFilmes.innerHTML = ""
+    ListaFilmes.innerHTML = ""
     lista.forEach(filme => {
-        listaFilmes.innerHTML += `
+        ListaFilmes.innerHTML += `
             <div class="col-md-4">
                 <div class="card card-filme h-100">
                     <img src="${filme.imagem}" class="card-img-top">
