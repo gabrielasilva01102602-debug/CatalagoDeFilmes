@@ -3,10 +3,11 @@ const jogos = [
         titulo: "Jurassic World Evolution - Ps4",
         imagem: "https://cdn.awsli.com.br/600x1000/53/53761/produto/29858445/eaf286a296.jpg",
         descricao: "Use bioengenharia para criar mais de 40 espécies de dinossauros que pensam e reagem, gerencie instalações, e enfrente desafios de segurança, espionagem corporativa e desastres naturais.",
+    },
     {
         titulo: "Pragmata - PS5",
         imagem: "https://media.themoviedb.org/t/p/w300_and_h450_face/1jGPgDDcmg3Xgs3WO8sfYfbnFoA.jpg",
-        descricao: "A humanidade descobriu na Lua um minério chamado Lunan, que deu origem ao material "Luna Filament", capaz de replicar qualquer objeto. Quando as comunicações com a estação lunar são cortadas, uma equipe é enviada, mas um terremoto lunar separa o astronauta Hugh William de seus companheiros. Ferido, ele é salvo por Diana, uma androide única criada com essa tecnologia. Juntos, eles devem enfrentar robôs hostis controlados pela IA Idos para escapar.",
+        descricao: "A humanidade descobriu na Lua um minério chamado Lunan, que deu origem ao material 'Luna Filament', capaz de replicar qualquer objeto. Quando as comunicações com a estação lunar são cortadas, uma equipe é enviada, mas um terremoto lunar separa o astronauta Hugh William de seus companheiros. Ferido, ele é salvo por Diana, uma androide única criada com essa tecnologia. Juntos, eles devem enfrentar robôs hostis controlados pela IA Idos para escapar.",
     },
     {
         titulo: "Split Fiction - PS5",
@@ -17,6 +18,7 @@ const jogos = [
         titulo: "Deathloop - PS5",
         imagem: "https://m.media-amazon.com/images/I/71p+JoV6rCL._AC_UF1000,1000_QL80_.jpg",
         descricao: " jogo de tiro em primeira pessoa onde você assume o papel de Colt, um assassino preso em um ciclo temporal na ilha de Blackreef Ciclo da morte.",
+    },
     {
         titulo: "Lego Ninjago O Filme: Video Game - Xbox One",
         imagem: "https://m.media-amazon.com/images/I/81o-hUhRCqL.jpg",
@@ -29,11 +31,11 @@ const jogos = [
     }
 ]
 
-const ListaJogo = document.getElementById("Listajogoo");
-function mostrarjogo(lista) {
+const ListaJogos = document.getElementById("ListaJogos");
+function mostrarjogos(lista) {
     Listajogos.innerHTML = ""
     lista.forEach(jogo => {
-        Listajogos.innerHTML += `
+        ListaJogos.innerHTML += `
             <div class="col-md-4">
                 <div class="card card-filme h-100">
                     <img src="${jogo.imagem}" class="card-img-top">
@@ -48,7 +50,7 @@ function mostrarjogo(lista) {
     });
 }
 
-mostrarJogos(jogos)
+mostrarjogos(jogos)
 
 function verDetalhes(titulo, descricao){
     Swal.fire({
